@@ -1,0 +1,56 @@
+/* Site Colors */
+$color-primary:#ffefd5;
+$color-secondary: #e9967a;
+$color-titles: #191970;
+$color-buttons: #2f4f4f;
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    font-size: 1em;
+}
+.header {
+    background-color: $color-secondary;
+    height: 300px;
+    text-align: center;
+    .title {
+        color: $color-titles;
+        padding-bottom: 10px;
+        .sub-title {
+            font-size: 45%;
+            font-weight: bold;
+            display: block;
+            color: rgb(248, 253, 199);
+        }
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        background-color: white;
+        margin: auto;
+    }
+    ul {
+        padding: 0;
+        margin-top: 5px;
+    }
+    li {
+        
+        list-style: none;
+        background-color: $color-primary;
+        margin: 0;
+      
+        a {
+            text-decoration: none;
+            color: $color-titles;
+            display: block;
+            padding: 10px;
+            &:hover {
+                background-color: $color-secondary;
+            }
+        }
+    }
+}

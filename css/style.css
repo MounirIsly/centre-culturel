@@ -1,0 +1,53 @@
+/* Site Colors */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-size: 1em;
+}
+
+.header {
+  background-color: #e9967a;
+  height: 300px;
+  text-align: center;
+}
+.header .title {
+  color: #191970;
+  padding-bottom: 10px;
+}
+.header .title .sub-title {
+  font-size: 45%;
+  font-weight: bold;
+  display: block;
+  color: #f8fdc7;
+}
+.header .logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  background-color: white;
+  margin: auto;
+}
+.header ul {
+  padding: 0;
+  margin-top: 5px;
+}
+.header li {
+  list-style: none;
+  background-color: #ffefd5;
+  margin: 0;
+}
+.header li a {
+  text-decoration: none;
+  color: #191970;
+  display: block;
+  padding: 10px;
+}
+.header li a:hover {
+  background-color: #e9967a;
+}
+
+/*# sourceMappingURL=style.css.map */
