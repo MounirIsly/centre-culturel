@@ -1,4 +1,5 @@
 /* Site Colors */
+/* Fonts */
 * {
   margin: 0;
   box-sizing: border-box;
@@ -7,11 +8,12 @@
 body {
   background-color: white;
   font-size: 1em;
+  font-family: "Lato", sans-serif;
 }
 
 .header {
   background-color: #e9967a;
-  height: 300px;
+  height: 385px;
   text-align: center;
 }
 .header .title {
@@ -25,11 +27,15 @@ body {
   color: #f8fdc7;
 }
 .header .logo {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border-radius: 50px;
   background-color: white;
   margin: auto;
+}
+.header .img-logo {
+  width: 100%;
+  border-radius: 40px;
 }
 .header ul {
   padding: 0;
@@ -48,6 +54,21 @@ body {
 }
 .header li a:hover {
   background-color: #e9967a;
+}
+
+.content .card {
+  width: 300px;
+  height: 250px;
+  background-color: #d6cfcf;
+  margin: 8px auto;
+}
+
+.footer {
+  height: 20vh;
+  text-align: center;
+  color: white;
+  padding: 2em;
+  background: #e9967a;
 }
 
 /*# sourceMappingURL=style.css.map */

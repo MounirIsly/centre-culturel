@@ -3,6 +3,12 @@ $color-primary:#ffefd5;
 $color-secondary: #e9967a;
 $color-titles: #191970;
 $color-buttons: #2f4f4f;
+$color-cards: rgb(214, 207, 207);
+
+/* Fonts */
+
+$font-primary: 'Lato', sans-serif;
+$font-secondary: 'Raleway', sans-serif;
 
 * {
     margin: 0;
@@ -11,10 +17,11 @@ $color-buttons: #2f4f4f;
 body {
     background-color: white;
     font-size: 1em;
+    font-family: $font-primary;
 }
 .header {
     background-color: $color-secondary;
-    height: 300px;
+    height: 385px;
     text-align: center;
     .title {
         color: $color-titles;
@@ -27,11 +34,15 @@ body {
         }
     }
     .logo {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         border-radius: 50px;
         background-color: white;
         margin: auto;
+    }
+    .img-logo {
+        width: 100%;
+        border-radius: 40px;
     }
     ul {
         padding: 0;
@@ -47,10 +58,28 @@ body {
             text-decoration: none;
             color: $color-titles;
             display: block;
-            padding: 10px;
+            padding: 10px;  
             &:hover {
                 background-color: $color-secondary;
             }
         }
     }
+}
+.content {
+   
+
+    .card {
+        width: 300px;
+        height: 250px;
+        background-color: $color-cards;
+        margin: 8px auto;
+    }
+}
+.footer {
+    height: 20vh;
+    text-align: center;
+    color: white;
+    padding: 2em;
+    
+    background: $color-secondary;
 }
