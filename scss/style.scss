@@ -1,6 +1,7 @@
 /* Site Colors */
 $color-primary:#ffefd5;
-$color-secondary: #e9967a;
+$color-secondary: #fc7d52;
+$color-secondary-2: #e9967a;
 $color-titles: #191970;
 $color-buttons: #2f4f4f;
 $color-cards: rgb(214, 207, 207);
@@ -21,7 +22,7 @@ body {
 }
 .header {
     background-color: $color-secondary;
-    height: 385px;
+    padding: 5px;
     text-align: center;
     .title {
         color: $color-titles;
@@ -43,6 +44,7 @@ body {
     .img-logo {
         width: 100%;
         border-radius: 40px;
+        box-shadow: 2px 4px 4px rgb(0, 2, 3, .3);
     }
     ul {
         padding: 0;
@@ -66,10 +68,8 @@ body {
     }
 }
 .content {
-   
-
     .card {
-        width: 300px;
+        border-radius: 5px;
         height: 250px;
         background-color: $color-cards;
         margin: 8px auto;
@@ -80,6 +80,32 @@ body {
     text-align: center;
     color: white;
     padding: 2em;
-    
-    background: $color-secondary;
+    background-color: $color-secondary;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 40em) {
+    .header {
+        .main-nav {
+            display: flex;
+            justify-content: center;
+            li {
+                background-color: $color-secondary;
+            }
+            a:hover {
+                background-color: whitesmoke;
+            }
+        }
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        .card {
+            flex: 1 0 30%;
+            margin: 10px;
+        }
+    }
 }
