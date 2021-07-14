@@ -1,5 +1,6 @@
 /* Site Colors */
 /* Fonts */
+/* Mixins */
 * {
   margin: 0;
   box-sizing: border-box;
@@ -17,14 +18,16 @@ body {
   text-align: center;
 }
 .header .title {
+  margin: 10px;
   color: #191970;
   padding-bottom: 10px;
 }
 .header .title .sub-title {
-  font-size: 45%;
+  font-size: 40%;
   font-weight: bold;
   display: block;
   color: #f8fdc7;
+  text-transform: uppercase;
 }
 .header .logo {
   width: 90px;
@@ -58,10 +61,18 @@ body {
 }
 
 .content .card {
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
   border-radius: 5px;
+  display: flex;
   height: 250px;
   background-color: #d6cfcf;
   margin: 8px auto;
+  align-items: center;
+  color: gray;
+}
+.content .card h2 {
+  margin: auto;
 }
 
 .footer {

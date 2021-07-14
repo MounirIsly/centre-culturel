@@ -1,0 +1,25 @@
+{
+  "name": "centre-culturel",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MounirIsly/centre-culturel.git"
+  },
+  "author": "Hadj Yahia Mounir",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "1.4.1"
+  },
+  "bugs": {
+    "url": "https://github.com/MounirIsly/centre-culturel/issues"
+  },
+  "homepage": "https://github.com/MounirIsly/centre-culturel#readme"
+}
