@@ -19,7 +19,7 @@ body {
 }
 .header .title {
   margin: 10px;
-  color: #191970;
+  color: green;
   padding-bottom: 10px;
 }
 .header .title .sub-title {
@@ -39,7 +39,12 @@ body {
 .header .img-logo {
   width: 100%;
   border-radius: 40px;
-  box-shadow: 2px 4px 4px rgba(0, 2, 3, 0.3);
+}
+.header .img-logo:hover {
+  -moz-box-shadow: 1px 1px 5px #5c5858;
+  -webkit-box-shadow: 1px 1px 5px #5c5858;
+  box-shadow: 1px 1px 5px #5c5858;
+  transition: 1s;
 }
 .header ul {
   padding: 0;
@@ -60,19 +65,50 @@ body {
   background-color: #fc7d52;
 }
 
+.btn {
+  color: white;
+  font-weight: bold;
+  background-color: #9ce72c;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.btn:hover {
+  transition: 0.5s;
+  background-color: #8dd128;
+  color: #ddd9d9;
+}
+
 .content .card {
   -webkit-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
+  position: relative;
   display: flex;
+  flex-direction: column;
   height: 250px;
   background-color: #d6cfcf;
   margin: 8px auto;
   align-items: center;
   color: gray;
 }
+.content .card::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  transform: skewY(-2deg);
+  background-color: #ffefd5;
+  bottom: -10px;
+}
 .content .card h2 {
   margin: auto;
+}
+.content .card .paragraph {
+  color: honeydew;
 }
 
 .footer {
